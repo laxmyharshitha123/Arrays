@@ -1,0 +1,32 @@
+## arrays:
+*an array is a data structure which contains similar elements with of any kind of same data type.
+*it consists of integers,strings,char only have the same data type.
+*it can be represent with [] ,arr[] = 231476 with size 6 .size can be represented with 'n'.
+*int arr[] = new int[6];
+*if the array is intializes inside or outside it gives or takes the value '0' in java.
+*but in c++ if we intialized inside it takes some garbage values if outise it takes it as zeros.
+*the maximum length of an array inside main is 10*6//*power in this
+*outside the main the length is 10*7// * means power in this.
+*the array index starts from 0 to the n-1;
+for example : 231476
+              012345
+the array is stored in computer memory creates a block of an array . the first block is stored in random 'x'
+here the 'x' is address location ,it stores the 0th index of an array.
+the contigous elements is stored in corresponding elements (x+1,x+2,x+3,x+4,x+5)
+problem : find the largest element of an array 
+arr[] = {3,2,1,3,2}
+solution : public class LargestElement {
+            public static int LargestElement(int[] arr) {
+              int Largest = arr[0];//first we intialize the 0 as largest 
+                for(int i = 1;i < arr.length;i++) {//here we intialize the 0 as largest so we can start with 1 st index 
+                   if(arr[i] > largest) {
+                      largest = arr[i];
+                }
+             }
+                public static voiid main(String[] args) {
+                 int[] arr={3,2,1,3,2};
+                  int result = largestelement(arr);
+                  System.out.println("largest element is :"+result);
+             }
+}
+                           
